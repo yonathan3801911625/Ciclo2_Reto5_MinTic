@@ -15,7 +15,7 @@ public class Conexion {
         try {
             Class.forName("org.sqlite.JDBC");
             conectar=DriverManager.getConnection("jdbc:sqlite:librosG70.db");
-            
+            System.out.println("Conectado");
             
         } catch (Exception e) {
             System.out.println(e.getMessage());
